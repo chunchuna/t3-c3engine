@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.t3-for-new-framework-1699355deb9146a632c57426174c57d8a3dc623c.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\游戏开发\C3\T3New\t3-new\t3-for-new-framework-1699355deb9146a632c57426174c57d8a3dc623c\.idea\.idea.t3-for-new-framework-1699355deb9146a632c57426174c57d8a3dc623c.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

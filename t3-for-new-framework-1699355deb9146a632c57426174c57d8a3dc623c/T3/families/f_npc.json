@@ -1,0 +1,42 @@
+{
+	"name": "f_npc",
+	"plugin-id": "Shape3D",
+	"sid": 613703891699855,
+	"instanceVariables": [
+		{
+			"name": "npc_name",
+			"type": "string",
+			"desc": "",
+			"sid": 671475458308498
+		},
+		{
+			"name": "npc_id",
+			"type": "number",
+			"desc": "",
+			"sid": 266243856094883
+		},
+		{
+			"name": "npc_group",
+			"type": "string",
+			"desc": "",
+			"sid": 785680252546512
+		},
+		{
+			"name": "npc_data",
+			"type": "number",
+			"desc": "",
+			"sid": 300890043171034
+		},
+		{
+			"name": "npc_distance",
+			"type": "number",
+			"desc": "",
+			"sid": 115480850311109
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"NPC"
+	]
+}

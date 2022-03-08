@@ -1,0 +1,204 @@
+{
+	"name": "eSound",
+	"events": [
+		{
+			"functionName": "playeSound",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 504448056586444
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 122315365069532,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "name",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 377829663780205
+		},
+		{
+			"functionName": "playeSoundLoop",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 642316301472652
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 582086128383986,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "name",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 629126087104449
+		},
+		{
+			"functionName": "playeSoundbyobject",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 226370105403658
+				},
+				{
+					"name": "uid",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 654446796533345
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 134305253757510,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 754748446067812
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "JumpSoundTriger",
+							"sid": 353452788713780,
+							"parameters": {
+								"unique-id": "uid"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-at-object-by-name",
+							"objectClass": "Audio",
+							"sid": 752327692216755,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "name",
+								"loop": "not-looping",
+								"volume": "-3",
+								"object": "JumpSoundTriger",
+								"inner-angle": "360",
+								"outer-angle": "360",
+								"outer-gain": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 572974057804544
+				}
+			]
+		},
+		{
+			"functionName": "playeSoundbyobjectloop",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 750162861435452
+				},
+				{
+					"name": "uid",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 726417899636343
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 815226658458626,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 454296499406680
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "JumpSoundTriger",
+							"sid": 450811633641225,
+							"parameters": {
+								"unique-id": "uid"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-at-object-by-name",
+							"objectClass": "Audio",
+							"sid": 837925648007922,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "name",
+								"loop": "looping",
+								"volume": "-3",
+								"object": "JumpSoundTriger",
+								"inner-angle": "360",
+								"outer-angle": "360",
+								"outer-gain": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 452134358189512
+				}
+			]
+		}
+	],
+	"sid": 624767668698765
+}

@@ -1,0 +1,20 @@
+{
+	"name": "f_wall",
+	"plugin-id": "Shape3D",
+	"sid": 299013742631763,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 273455943805283
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"wall1",
+		"wall2",
+		"TEST_BUILD",
+		"KuliPa"
+	]
+}

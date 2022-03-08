@@ -1,0 +1,100 @@
+{
+	"name": "eMouse",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 293404642585513,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_mouseclick\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 454834894194764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 603308422842116,
+					"parameters": {
+						"mouse-button": "middle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_mousemidclicktick\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 415451597164398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-movement",
+					"objectClass": "Mouse",
+					"sid": 220802948260678
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_mouse:onmovement\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 214224276973568
+		},
+		{
+			"functionName": "mouse:request:pointer:lock",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "request-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 782533213421463
+				}
+			],
+			"sid": 533126565553906
+		},
+		{
+			"functionName": "mouse:realase:pointer:lock",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "release-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 592787099338150
+				}
+			],
+			"sid": 472958320617304
+		}
+	],
+	"sid": 453706441448147
+}

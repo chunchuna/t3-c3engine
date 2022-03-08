@@ -1,0 +1,64 @@
+{
+	"name": "e3Dobject",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 418471231135533
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "f_FaceCamera",
+					"sid": 678169968999813,
+					"parameters": {
+						"x": "Pl.X",
+						"y": "Pl.Y"
+					}
+				}
+			],
+			"sid": 894504643090845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-loaded",
+					"objectClass": "f_3Dobjbect",
+					"sid": 988094609458748
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-height",
+					"objectClass": "f_3Dobjbect",
+					"sid": 261410148944480,
+					"parameters": {
+						"z-height": "9000"
+					}
+				},
+				{
+					"id": "set-local-center",
+					"objectClass": "f_3Dobjbect",
+					"sid": 649849186512947,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"z": "0"
+					}
+				},
+				{
+					"id": "update-bbox",
+					"objectClass": "f_3Dobjbect",
+					"sid": 259448648369085
+				}
+			],
+			"sid": 108671366707056
+		}
+	],
+	"sid": 835253757565910
+}

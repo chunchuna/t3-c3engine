@@ -1,0 +1,64 @@
+{
+	"name": "eData",
+	"events": [
+		{
+			"functionName": "GameSavaSence",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "DataName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 772945095233203
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 286567217492084,
+					"parameters": {
+						"slot": "DataName"
+					}
+				}
+			],
+			"sid": 298806711104251
+		},
+		{
+			"functionName": "LoadSavaSence",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "DataName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 231222073056168
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 531075501984316,
+					"parameters": {
+						"slot": "DataName"
+					}
+				}
+			],
+			"sid": 196516117674639
+		}
+	],
+	"sid": 290066809364637
+}

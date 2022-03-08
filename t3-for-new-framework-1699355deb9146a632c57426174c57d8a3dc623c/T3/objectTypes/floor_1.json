@@ -1,0 +1,20 @@
+{
+	"name": "floor_1",
+	"plugin-id": "TiledBg",
+	"sid": 287372731100395,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 778,
+		"height": 760,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6663399,
+		"useCollisionPoly": true
+	}
+}

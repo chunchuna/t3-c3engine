@@ -1,0 +1,45 @@
+{
+	"name": "f_Ghost",
+	"plugin-id": "Shape3D",
+	"sid": 473182404047542,
+	"instanceVariables": [
+		{
+			"name": "Dir",
+			"type": "string",
+			"desc": "",
+			"sid": 727203562133478
+		},
+		{
+			"name": "MOVE_TIMER",
+			"type": "number",
+			"desc": "",
+			"sid": 901533623830880
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "WallBe",
+			"sid": 482667137726351
+		},
+		{
+			"behaviorId": "Pathfinding",
+			"name": "PathBe",
+			"sid": 881093803826855
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveBe",
+			"sid": 396671326632996
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer_",
+			"sid": 918719332726899
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"KuliPa"
+	]
+}

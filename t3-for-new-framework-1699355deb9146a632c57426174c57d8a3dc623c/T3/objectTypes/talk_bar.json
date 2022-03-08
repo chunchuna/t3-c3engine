@@ -1,0 +1,48 @@
+{
+	"name": "talk_bar",
+	"plugin-id": "Sprite",
+	"sid": 982693205482692,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 157729227465632
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 117718036169251
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7392813,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 376633943433425,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

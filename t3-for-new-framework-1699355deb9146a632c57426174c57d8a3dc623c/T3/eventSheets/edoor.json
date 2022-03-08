@@ -1,0 +1,128 @@
+{
+	"name": "eDoor",
+	"events": [
+		{
+			"functionName": "Set_Door_Solid",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "uid",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 994079663687596
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "f_Door",
+					"sid": 655624335918812,
+					"parameters": {
+						"unique-id": "uid"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_Door",
+					"sid": 501761575114468,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 384957732929198
+		},
+		{
+			"functionName": "Set_Door_Solid_F",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "uid2",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 793474092429808
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_Door",
+					"sid": 392051832231229,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 921340692110469
+		},
+		{
+			"functionName": "Set_Door_Angel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "uid",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 728019907399899
+				},
+				{
+					"name": "an",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 626890754869121
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "f_Door",
+					"sid": 989851269318151,
+					"parameters": {
+						"unique-id": "uid"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "f_Door",
+					"sid": 795136857677990,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetAngle",
+						"end-value": "an",
+						"time": "0.6",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 247293690840235
+		}
+	],
+	"sid": 371383891558028
+}

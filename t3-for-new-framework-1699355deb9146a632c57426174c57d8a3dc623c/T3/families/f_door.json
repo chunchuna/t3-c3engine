@@ -1,0 +1,41 @@
+{
+	"name": "f_Door",
+	"plugin-id": "Shape3D",
+	"sid": 874171347281614,
+	"instanceVariables": [
+		{
+			"name": "CurrentState",
+			"type": "string",
+			"desc": "",
+			"sid": 256719455298274
+		},
+		{
+			"name": "OpenAngel",
+			"type": "number",
+			"desc": "",
+			"sid": 998731656579565
+		},
+		{
+			"name": "CloseAngel",
+			"type": "number",
+			"desc": "",
+			"sid": 695319951107579
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 514951571750122
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 305158723101363
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Door"
+	]
+}

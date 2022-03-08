@@ -1,0 +1,129 @@
+{
+	"name": "eWall",
+	"events": [
+		{
+			"functionName": "wall:enble:soild",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_wall",
+					"sid": 698131902097425,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 505489930242303
+		},
+		{
+			"functionName": "wall:!enble:soild",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_wall",
+					"sid": 484496410049987,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 187334449654220
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "f_wall",
+					"sid": 599407153472527,
+					"parameters": {
+						"object": "Pl"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_e_wall:touch:pl\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 571820780544539
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 384650895075644
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_wall",
+					"sid": 865789154271296,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 525331163687744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-z-elevation",
+					"objectClass": "f_wall",
+					"sid": 960964162524396,
+					"parameters": {
+						"which": "z-elevation",
+						"comparison": 4,
+						"z-elevation": "Pl.ZElevation-Self.Height+25"
+					}
+				},
+				{
+					"id": "compare-z-elevation",
+					"objectClass": "f_wall",
+					"sid": 242598014279521,
+					"parameters": {
+						"which": "z-elevation",
+						"comparison": 3,
+						"z-elevation": "Pl.ZElevation"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "f_wall",
+					"sid": 610138835813110,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 493990926522580
+		}
+	],
+	"sid": 183110279198758
+}

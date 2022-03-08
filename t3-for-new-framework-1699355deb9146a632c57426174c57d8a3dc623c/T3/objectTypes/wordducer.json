@@ -1,0 +1,68 @@
+{
+	"name": "WordDucer",
+	"plugin-id": "Sprite",
+	"sid": 774414543992655,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "DisplayText",
+			"type": "string",
+			"desc": "",
+			"sid": 981780196058189
+		},
+		{
+			"name": "NumberOfTriggers",
+			"type": "number",
+			"desc": "",
+			"sid": 936630448296720
+		},
+		{
+			"name": "TriggersOnce",
+			"type": "boolean",
+			"desc": "",
+			"sid": 354586114169962
+		},
+		{
+			"name": "MultilineDialogue",
+			"type": "boolean",
+			"desc": "",
+			"sid": 538282334202472
+		},
+		{
+			"name": "MultilineDialogEvent",
+			"type": "string",
+			"desc": "",
+			"sid": 856378022732964
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3612606,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 783479910712524,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

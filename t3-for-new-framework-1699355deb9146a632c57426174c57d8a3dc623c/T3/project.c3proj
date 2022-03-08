@@ -1,0 +1,1004 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 28503,
+	"name": "TS3",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mikal_3DObject",
+			"name": "3D object",
+			"author": "Mikal",
+			"version": "2.12.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "EdwardBonnett_ScriptReload",
+			"name": "Script Reload",
+			"author": "Edward Bonnett",
+			"version": "1.0.0.2",
+			"bundled": true
+		},
+		{
+			"type": "plugin",
+			"id": "SpeechSynthesis",
+			"name": "Speech synthesis",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		}
+	],
+	"uniqueId": "i2w594tds3j",
+	"objectTypes": {
+		"items": [
+			"PortalTrigger",
+			"PlainText",
+			"BottomPlate",
+			"CameraFlowPoint",
+			"Button",
+			"LobbyRoomNode",
+			"NameEditBox",
+			"Loginstatetext",
+			"ServersListText"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"wall1",
+							"wall2",
+							"floor_3",
+							"floor_4",
+							"house1",
+							"house2",
+							"house3"
+						],
+						"subfolders": [],
+						"name": "House"
+					},
+					{
+						"items": [
+							"Audio",
+							"fpscam",
+							"Mouse",
+							"ScreenHint",
+							"ScriptReload",
+							"SpeechSynthesis",
+							"Keyboard",
+							"Timeline"
+						],
+						"subfolders": [],
+						"name": "Addon"
+					},
+					{
+						"items": [
+							"3DShape",
+							"SteleTerrorManager",
+							"TerrorTrigger",
+							"BUILD_BOX",
+							"BUILD_MANEGER",
+							"c_window_manager",
+							"cam",
+							"Door",
+							"DoorMask",
+							"floor_5",
+							"fog",
+							"GhostBase",
+							"JumpSoundTriger",
+							"KuliPa",
+							"level_c",
+							"level_c_map",
+							"level_c_map_choose_box",
+							"LevelManager",
+							"NPC",
+							"PathFindPoint",
+							"Pl",
+							"PlLine",
+							"skybox",
+							"TEST_BUILD",
+							"wall",
+							"we_flower",
+							"we_wood_box",
+							"wei_choose",
+							"wei_manager",
+							"car_storyt1",
+							"Characters_t_box",
+							"talk_bar",
+							"Charactersbase",
+							"storyT1Manager",
+							"DancePeople",
+							"WordDucer",
+							"car_storyt2",
+							"Road",
+							"Tree",
+							"DataManager",
+							"PoliceCar",
+							"RoadBlock",
+							"Man"
+						],
+						"subfolders": [],
+						"name": "Object"
+					},
+					{
+						"items": [
+							"GraphText",
+							"wei_text",
+							"talk_text",
+							"Characters_name"
+						],
+						"subfolders": [],
+						"name": "Text"
+					}
+				],
+				"name": "Perfable"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"f_wall",
+			"f_Door",
+			"f_DistanceFromPl",
+			"f_Ghost",
+			"f_npc",
+			"f_FaceCamera",
+			"f_3Dobjbect"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"WEI"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"SENCE"
+				],
+				"subfolders": [],
+				"name": "res"
+			},
+			{
+				"items": [
+					"DOOR_ROOM",
+					"GHOST_ROOM",
+					"MAIN_ROOM",
+					"Layout 2",
+					"Layout 3"
+				],
+				"subfolders": [],
+				"name": "TestRoom"
+			},
+			{
+				"items": [
+					"NPC_ROOM"
+				],
+				"subfolders": [],
+				"name": "NPCroom"
+			},
+			{
+				"items": [
+					"LOBBY_ROOM"
+				],
+				"subfolders": [],
+				"name": "The lobby"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"eMouse"
+				],
+				"subfolders": [],
+				"name": "Mouse"
+			},
+			{
+				"items": [
+					"eInterface",
+					"eMath"
+				],
+				"subfolders": [],
+				"name": "Interface"
+			},
+			{
+				"items": [
+					"efps"
+				],
+				"subfolders": [],
+				"name": "fps"
+			},
+			{
+				"items": [
+					"eKeyboard"
+				],
+				"subfolders": [],
+				"name": "Keyboard"
+			},
+			{
+				"items": [
+					"eWall"
+				],
+				"subfolders": [],
+				"name": "Wall"
+			},
+			{
+				"items": [
+					"eSound",
+					"eSoundTriger"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"eUspeak"
+						],
+						"subfolders": [],
+						"name": "u_speker"
+					}
+				],
+				"name": "sound"
+			},
+			{
+				"items": [
+					"eDoor"
+				],
+				"subfolders": [],
+				"name": "Door"
+			},
+			{
+				"items": [
+					"eGhost"
+				],
+				"subfolders": [],
+				"name": "Ghost"
+			},
+			{
+				"items": [
+					"eWEI"
+				],
+				"subfolders": [],
+				"name": "Wei"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "npc_base"
+					},
+					{
+						"items": [
+							"e_npc"
+						],
+						"subfolders": [],
+						"name": "npc_advance"
+					}
+				],
+				"name": "npc"
+			},
+			{
+				"items": [
+					"eT1"
+				],
+				"subfolders": [],
+				"name": "Story"
+			},
+			{
+				"items": [
+					"e3Dobject"
+				],
+				"subfolders": [],
+				"name": "3Dobject"
+			},
+			{
+				"items": [
+					"eData"
+				],
+				"subfolders": [],
+				"name": "Data"
+			},
+			{
+				"items": [
+					"eLobbyRoom"
+				],
+				"subfolders": [],
+				"name": "TheLobby"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "data_base.js",
+					"type": "text/javascript",
+					"sid": 971935734014952,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "Effect"
+						},
+						{
+							"items": [
+								{
+									"name": "FpsController.js",
+									"type": "text/javascript",
+									"sid": 598323144792505,
+									"script-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "f_camera.js",
+									"type": "application/javascript",
+									"sid": 247497787740184,
+									"script-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "fps_controller.js",
+									"type": "application/javascript",
+									"sid": 410349987553414,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "fpsController"
+						},
+						{
+							"items": [
+								{
+									"name": "rd_base.js",
+									"type": "text/javascript",
+									"sid": 482964959435339,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Graph"
+						},
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "object"
+						},
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "Camera"
+						},
+						{
+							"items": [
+								{
+									"name": "GameJumpSoundTriger.js",
+									"type": "text/javascript",
+									"sid": 508394885515013,
+									"script-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "GameJumpSoundTriger1.js",
+									"type": "text/javascript",
+									"sid": 897111789150260,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [
+								{
+									"items": [],
+									"subfolders": [],
+									"name": "uspeak"
+								}
+							],
+							"name": "Sound"
+						},
+						{
+							"items": [
+								{
+									"name": "shock_steleterror.js",
+									"type": "application/javascript",
+									"sid": 882649546938350,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "SunodTrgier"
+						},
+						{
+							"items": [
+								{
+									"name": "ghost_ai.js",
+									"type": "application/javascript",
+									"sid": 520918038192998,
+									"script-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "ghost_near_pl.js",
+									"type": "application/javascript",
+									"sid": 736713685358049,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Ghost"
+						},
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "UI"
+						},
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "Level"
+						},
+						{
+							"items": [
+								{
+									"name": "worldducer.js",
+									"type": "application/javascript",
+									"sid": 955958077939219,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "WorldDucer"
+						},
+						{
+							"items": [
+								{
+									"name": "npc_advance.js",
+									"type": "text/javascript",
+									"sid": 403562761114475,
+									"script-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "npc_base.js",
+									"type": "text/javascript",
+									"sid": 944354134443220,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "NPC"
+						},
+						{
+							"items": [
+								{
+									"name": "ht_base.js",
+									"type": "application/javascript",
+									"sid": 954902695281833,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "ScreenHint"
+						},
+						{
+							"items": [
+								{
+									"name": "story_t1.js",
+									"type": "text/javascript",
+									"sid": 455081287524212,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Story"
+						},
+						{
+							"items": [],
+							"subfolders": [],
+							"name": "Creat"
+						},
+						{
+							"items": [
+								{
+									"name": "dt_base.js",
+									"type": "application/javascript",
+									"sid": 849551547997395,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Data"
+						},
+						{
+							"items": [
+								{
+									"name": "portaltrigger.js",
+									"type": "application/javascript",
+									"sid": 528631678871073,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "PortalTrigger"
+						},
+						{
+							"items": [
+								{
+									"name": "lobby.js",
+									"type": "application/javascript",
+									"sid": 756073719707401,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Lobby"
+						}
+					],
+					"name": "Game"
+				},
+				{
+					"items": [
+						{
+							"name": "engine.js",
+							"type": "application/javascript",
+							"sid": 413058939996528,
+							"script-info": {
+								"purpose": "main"
+							}
+						},
+						{
+							"name": "use_script.js",
+							"type": "application/javascript",
+							"sid": 926204351475912,
+							"script-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Core"
+				}
+			]
+		},
+		"sound": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "creepy1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 646439874957785
+						},
+						{
+							"name": "creepy2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 164999470573537
+						}
+					],
+					"subfolders": [],
+					"name": "test_sound"
+				}
+			]
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 686153290418704,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 701804492536626,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 980552356931212,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 779377068024702,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 479019476325254,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 555787242355226,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 467652888083377,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "ben2.gltf",
+							"type": "application/octet-stream",
+							"sid": 596697143281533
+						},
+						{
+							"name": "hiphop.gltf",
+							"type": "application/octet-stream",
+							"sid": 952392008858633
+						},
+						{
+							"name": "chagltf.gltf",
+							"type": "application/octet-stream",
+							"sid": 822271577991494
+						},
+						{
+							"name": "bus1.gltf",
+							"type": "application/octet-stream",
+							"sid": 917295130106739
+						},
+						{
+							"name": "plolisecar.gltf",
+							"type": "application/octet-stream",
+							"sid": 117677666329347
+						},
+						{
+							"name": "house1.gltf",
+							"type": "application/octet-stream",
+							"sid": 961802882099212
+						},
+						{
+							"name": "house2.gltf",
+							"type": "application/octet-stream",
+							"sid": 951534186703273
+						},
+						{
+							"name": "house3.gltf",
+							"type": "application/octet-stream",
+							"sid": 648494424334165
+						},
+						{
+							"name": "RoadBlock.gltf",
+							"type": "application/octet-stream",
+							"sid": 648633615433590
+						}
+					],
+					"subfolders": [],
+					"name": "gltf"
+				}
+			]
+		}
+	},
+	"timelines": {
+		"items": [
+			"story_01"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 1.0471975511965976,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "high",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 512,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": "WEI"
+}

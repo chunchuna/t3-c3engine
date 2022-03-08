@@ -1,0 +1,13 @@
+{
+	"name": "ScriptReload",
+	"plugin-id": "EdwardBonnett_ScriptReload",
+	"sid": 487194223300470,
+	"singleglobal-inst": {
+		"type": "ScriptReload",
+		"properties": {
+			"script-refresh": 2000,
+			"log-messages": false
+		},
+		"uid": 76
+	}
+}

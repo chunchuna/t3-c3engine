@@ -1,0 +1,65 @@
+{
+	"name": "eT1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 103314337984049
+				}
+			],
+			"actions": [],
+			"sid": 474354480053540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-timeline-finished",
+					"objectClass": "Timeline",
+					"sid": 860874611990410
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "RegisterCall(\"TimeLineFinished\")"
+				}
+			],
+			"sid": 119011861383875
+		},
+		{
+			"functionName": "TimeLinePlayByName",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 357739027982732
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play-timeline-by-name",
+					"objectClass": "Timeline",
+					"sid": 317335268089028,
+					"parameters": {
+						"timeline-name": "name",
+						"tags": "name"
+					}
+				}
+			],
+			"sid": 153669142064855
+		}
+	],
+	"sid": 481539919443631
+}

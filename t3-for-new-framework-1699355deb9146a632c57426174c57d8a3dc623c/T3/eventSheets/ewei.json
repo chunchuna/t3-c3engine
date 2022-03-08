@@ -1,0 +1,49 @@
+{
+	"name": "eWEI",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eInterface"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "wei_camera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 303076340733217
+						}
+					],
+					"actions": [
+						{
+							"id": "look-at-position",
+							"objectClass": "fpscam",
+							"sid": 370759075090572,
+							"parameters": {
+								"cam-x": "we_wood_box.X",
+								"cam-y": "we_wood_box.Y+300",
+								"cam-z": "100",
+								"look-x": "we_wood_box.X",
+								"look-y": "we_wood_box.Y",
+								"look-z": "0",
+								"up-x": "0",
+								"up-y": "1",
+								"up-z": "0"
+							}
+						}
+					],
+					"sid": 114856021735815
+				}
+			],
+			"sid": 255697832143216
+		}
+	],
+	"sid": 320640311277594
+}

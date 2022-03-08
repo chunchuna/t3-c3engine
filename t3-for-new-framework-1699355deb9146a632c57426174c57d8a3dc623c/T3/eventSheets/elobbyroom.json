@@ -1,0 +1,76 @@
+{
+	"name": "eLobbyRoom",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eInterface"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 763663636185336
+				}
+			],
+			"actions": [
+				{
+					"id": "look-at-position",
+					"objectClass": "fpscam",
+					"sid": 168183767243792,
+					"parameters": {
+						"cam-x": "CameraFlowPoint.x+90",
+						"cam-y": "CameraFlowPoint.y",
+						"cam-z": "200",
+						"look-x": "CameraFlowPoint.x",
+						"look-y": "CameraFlowPoint.y",
+						"look-z": "CameraFlowPoint.ZElevation",
+						"up-x": "0",
+						"up-y": "1",
+						"up-z": "0"
+					}
+				}
+			],
+			"sid": 990408100573635
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "LobbyEvent",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "LobbyButtonEvent",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button",
+									"sid": 381079270332674
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "var button =runtime.objects.Button.getPickedInstances()\nRegisterCall(\"EnterButtonClick\",button)"
+								}
+							],
+							"sid": 503621633466592
+						}
+					],
+					"sid": 891824401232473
+				}
+			],
+			"sid": 248894920260236
+		}
+	],
+	"sid": 244219802729720
+}

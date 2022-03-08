@@ -1,0 +1,10 @@
+{
+	"name": "fpscam",
+	"plugin-id": "Camera3D",
+	"sid": 507617339842551,
+	"singleglobal-inst": {
+		"type": "fpscam",
+		"properties": {},
+		"uid": 115
+	}
+}

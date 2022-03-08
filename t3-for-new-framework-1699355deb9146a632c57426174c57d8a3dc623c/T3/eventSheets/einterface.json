@@ -1,0 +1,185 @@
+{
+	"name": "eInterface",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eMouse"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eKeyboard"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eWall"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eSoundTriger"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "efps"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eGhost"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "e_npc"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eT1"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "e3Dobject"
+		},
+		{
+			"functionName": "c3fps",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 400679100533929,
+					"parameters": {
+						"value": "fps"
+					}
+				}
+			],
+			"sid": 816757540455005
+		},
+		{
+			"functionName": "c3cpu",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 707681873611554,
+					"parameters": {
+						"value": "cpuutilisation"
+					}
+				}
+			],
+			"sid": 723828605442831
+		},
+		{
+			"functionName": "c3tickcount",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 455938686915059,
+					"parameters": {
+						"value": "tickcount"
+					}
+				}
+			],
+			"sid": 668745536090556
+		},
+		{
+			"functionName": "c3setLayerVi",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"sid": 692449569926384
+				},
+				{
+					"name": "layerName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 586595207194103
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 962542918373198,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 386092152927912,
+							"parameters": {
+								"variable": "state"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 238437695699196,
+							"parameters": {
+								"layer": "layerName",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 352765719176799
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 488383751452021,
+							"parameters": {
+								"variable": "state"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 270211212456612,
+							"parameters": {
+								"layer": "layerName",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 944664332739928
+				}
+			]
+		}
+	],
+	"sid": 229777384205169
+}

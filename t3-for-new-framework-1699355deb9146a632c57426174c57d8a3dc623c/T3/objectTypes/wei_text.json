@@ -1,0 +1,16 @@
+{
+	"name": "wei_text",
+	"plugin-id": "Text",
+	"sid": 324382001930581,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "tag",
+			"type": "string",
+			"desc": "",
+			"sid": 947581358220542
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

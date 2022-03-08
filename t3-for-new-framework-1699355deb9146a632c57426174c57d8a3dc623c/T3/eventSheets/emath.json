@@ -1,0 +1,92 @@
+{
+	"name": "eMath",
+	"events": [
+		{
+			"functionName": "Math_Distance",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "a1",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 889973235501096
+				},
+				{
+					"name": "a2",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 578334676952107
+				},
+				{
+					"name": "a3",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 240337125365774
+				},
+				{
+					"name": "a4",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 597622270396109
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 453654115822781,
+					"parameters": {
+						"value": "distance(a1,a2,a3,a4)"
+					}
+				}
+			],
+			"sid": 256292834035083
+		},
+		{
+			"functionName": "Math_Ramdom",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "a1",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 808865844323656
+				},
+				{
+					"name": "a2",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 623259574059742
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 457378281491766,
+					"parameters": {
+						"value": "Int(random(a1,a2))"
+					}
+				}
+			],
+			"sid": 172921979298177
+		}
+	],
+	"sid": 336072578231080
+}

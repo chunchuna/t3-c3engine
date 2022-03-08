@@ -1,0 +1,197 @@
+{
+	"name": "eGhost",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 265658257118235
+				}
+			],
+			"actions": [
+				{
+					"id": "add-obstacle",
+					"objectClass": "f_Ghost",
+					"sid": 317672865291163,
+					"behaviorType": "PathBe",
+					"parameters": {
+						"obstacle": "wall"
+					}
+				},
+				{
+					"id": "add-obstacle",
+					"objectClass": "f_Ghost",
+					"sid": 998519278260147,
+					"behaviorType": "PathBe",
+					"parameters": {
+						"obstacle": "f_wall"
+					}
+				}
+			],
+			"sid": 641158414016773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "f_Ghost",
+					"sid": 153785298986597,
+					"behaviorType": "Timer_",
+					"parameters": {
+						"tag": "\"MOVE_TIMER\""
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 529185478525560,
+					"parameters": {
+						"object": "f_Ghost"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var instance = runtime.objects.f_Ghost.getPickedInstances()\nvar event = new CustomEvent(\"MOVE_TIMER_DONE\", {\ndetail:instance\n})\n\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 283995589164424
+		},
+		{
+			"functionName": "GHOST_OPEN_TIMER",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "TIMER_NAME",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 132552466159447
+				},
+				{
+					"name": "SET_TIME",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 158250671575332
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 427681363407934,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-timer-running",
+							"objectClass": "f_Ghost",
+							"sid": 259823356636512,
+							"behaviorType": "Timer_",
+							"parameters": {
+								"tag": "TIMER_NAME"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "f_Ghost",
+							"sid": 696562849272814,
+							"behaviorType": "Timer_",
+							"parameters": {
+								"duration": "Self.MOVE_TIMER",
+								"type": "once",
+								"tag": "TIMER_NAME"
+							}
+						}
+					],
+					"sid": 391785836352120
+				}
+			]
+		},
+		{
+			"functionName": "GHOST_FIND_PATH",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [
+				{
+					"name": "FINDX",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 611757241781213
+				},
+				{
+					"name": "FINDY",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 652325183199595
+				},
+				{
+					"name": "ID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 264905333020360
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 921426985433600,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "f_Ghost",
+							"sid": 422401949842625,
+							"parameters": {
+								"unique-id": "ID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "f_Ghost",
+							"sid": 995765819937581,
+							"behaviorType": "PathBe",
+							"parameters": {
+								"x": "FINDX",
+								"y": "FINDY"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 567735661788423
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "f_Ghost",
+							"sid": 650098855715140,
+							"behaviorType": "PathBe"
+						}
+					],
+					"sid": 423764244808052
+				}
+			]
+		}
+	],
+	"sid": 210988687885857
+}

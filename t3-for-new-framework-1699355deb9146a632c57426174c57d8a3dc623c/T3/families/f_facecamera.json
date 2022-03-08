@@ -1,0 +1,11 @@
+{
+	"name": "f_FaceCamera",
+	"plugin-id": "Shape3D",
+	"sid": 330560749987217,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Tree"
+	]
+}

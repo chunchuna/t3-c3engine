@@ -1,0 +1,114 @@
+{
+	"name": "e_npc",
+	"events": [
+		{
+			"functionName": "npc_talk_call_bar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "talk_bar",
+					"sid": 941019957558377,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "2"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "talk_bar",
+					"sid": 470549621906030,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "0"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "talk_bar",
+					"sid": 785639202686568,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "talk_bar",
+					"sid": 803217995703418,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"up\"",
+						"property": "position",
+						"end-x": "Self.X",
+						"end-y": "Self.Y+90",
+						"time": "1.2",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 901202235642399
+		},
+		{
+			"functionName": "npc_talk_back_bar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "talk_bar",
+					"sid": 258781868582821,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "talk_bar",
+					"sid": 868001824693945,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "0"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "talk_bar",
+					"sid": 572038989770182,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "talk_bar",
+					"sid": 699632140899543,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"down\"",
+						"property": "position",
+						"end-x": "Self.X",
+						"end-y": "Self.Y-90",
+						"time": "1.2",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 938635685436654
+		}
+	],
+	"sid": 812425923105674
+}

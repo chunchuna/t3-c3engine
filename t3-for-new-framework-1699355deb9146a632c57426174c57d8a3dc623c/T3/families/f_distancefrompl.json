@@ -1,0 +1,19 @@
+{
+	"name": "f_DistanceFromPl",
+	"plugin-id": "Shape3D",
+	"sid": 183832130660673,
+	"instanceVariables": [
+		{
+			"name": "Distance",
+			"type": "number",
+			"desc": "",
+			"sid": 192495192251697
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Door",
+		"KuliPa"
+	]
+}

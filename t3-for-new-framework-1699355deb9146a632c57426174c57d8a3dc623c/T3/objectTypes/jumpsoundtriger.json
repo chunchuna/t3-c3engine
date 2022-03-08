@@ -1,0 +1,68 @@
+{
+	"name": "JumpSoundTriger",
+	"plugin-id": "Sprite",
+	"sid": 648307237566516,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "soundName",
+			"type": "string",
+			"desc": "",
+			"sid": 319568389699827
+		},
+		{
+			"name": "type",
+			"type": "number",
+			"desc": "",
+			"sid": 972825758702316
+		},
+		{
+			"name": "only",
+			"type": "boolean",
+			"desc": "",
+			"sid": 451888028231445
+		},
+		{
+			"name": "playetimes",
+			"type": "number",
+			"desc": "",
+			"sid": 990681112432561
+		},
+		{
+			"name": "u_speak",
+			"type": "string",
+			"desc": "",
+			"sid": 317587524035414
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4491255,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 768805349809968,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

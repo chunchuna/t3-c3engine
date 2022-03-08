@@ -1,0 +1,61 @@
+{
+	"name": "eSoundTriger",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 373673356040927
+				}
+			],
+			"actions": [
+				{
+					"id": "set-listener-object",
+					"objectClass": "Audio",
+					"sid": 209247735916095,
+					"parameters": {
+						"object": "Pl"
+					}
+				}
+			],
+			"sid": 757716072189117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "JumpSoundTriger",
+					"sid": 305125848917657,
+					"parameters": {
+						"object": "Pl"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 902354479938529,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 673068100206128
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "var i =runtime.objects.JumpSoundTriger.getPickedInstances()\nvar event = new CustomEvent(\"pl_in_sound_triger\", {\ndetail: i\n})\nwindow.dispatchEvent(event)"
+						}
+					],
+					"sid": 733960330078062
+				}
+			]
+		}
+	],
+	"sid": 124392680152103
+}

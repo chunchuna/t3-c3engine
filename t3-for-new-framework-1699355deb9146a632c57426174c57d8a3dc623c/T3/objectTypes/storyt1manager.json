@@ -1,0 +1,44 @@
+{
+	"name": "storyT1Manager",
+	"plugin-id": "Sprite",
+	"sid": 834614504108576,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isTrigger",
+			"type": "boolean",
+			"desc": "",
+			"sid": 847750915998978
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3035578,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 904552528926713,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Road",
+	"plugin-id": "TiledBg",
+	"sid": 857530572098541,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1200,
+		"height": 702,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6399675,
+		"useCollisionPoly": true
+	}
+}

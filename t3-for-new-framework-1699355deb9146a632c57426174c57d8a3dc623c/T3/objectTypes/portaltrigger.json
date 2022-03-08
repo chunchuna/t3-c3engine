@@ -1,0 +1,62 @@
+{
+	"name": "PortalTrigger",
+	"plugin-id": "Sprite",
+	"sid": 239195075312553,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TextPrompt",
+			"type": "string",
+			"desc": "",
+			"sid": 978484865744252
+		},
+		{
+			"name": "TeleportX",
+			"type": "number",
+			"desc": "",
+			"sid": 626886897637476
+		},
+		{
+			"name": "TeleportY",
+			"type": "number",
+			"desc": "",
+			"sid": 642849216294906
+		},
+		{
+			"name": "isEnble",
+			"type": "boolean",
+			"desc": "",
+			"sid": 909326700301099
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8596869,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 882700820247372,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

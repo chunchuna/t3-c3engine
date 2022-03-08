@@ -1,0 +1,326 @@
+{
+	"name": "eKeyboard",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 653549807073414,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_z_press\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 876548360741628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 124705758231766,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_shift_press\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 152353036291914
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 100611135134524,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_q_press\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 376927560559874
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 977539386583083,
+					"parameters": {
+						"key": 74
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"KeyJ\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 729087163835964
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 759034358666816,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"_f_press\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 290117987905034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 721735513069584,
+					"parameters": {
+						"key": 86
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"build_key\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 858272919301367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 472492074408337,
+					"parameters": {
+						"key": 80
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"join_cr\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 952442358301664
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 931212116657237,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"key_up\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 752980907114088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 647901991807509,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"key_down\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 241183424118851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 763173447096770,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"key_left\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 298172716895398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 556694064152261,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"key_right\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 301383043932009
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 621829303796634,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"space\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 690548157450209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 189216875917615,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"esc\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 951543577029504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 718955753735931,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"enter\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 424474091930737
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 780851957338812,
+					"parameters": {
+						"key": 106
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"*Key\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 463466123095148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 204798773881766,
+					"parameters": {
+						"key": 111
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "var event = new CustomEvent(\"/Key\", {})\nwindow.dispatchEvent(event)"
+				}
+			],
+			"sid": 814344889573778
+		}
+	],
+	"sid": 617175848070359
+}

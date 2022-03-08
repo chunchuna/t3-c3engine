@@ -1,0 +1,68 @@
+{
+	"name": "eUspeak",
+	"events": [
+		{
+			"functionName": "u_speak",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "text",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 322763235186484
+				},
+				{
+					"name": "lan",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 981173263044016
+				},
+				{
+					"name": "rate",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 191095296307978
+				},
+				{
+					"name": "pitch",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 849869452844536
+				},
+				{
+					"name": "volum",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 369961419038963
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "speak-text",
+					"objectClass": "SpeechSynthesis",
+					"sid": 157491407994129,
+					"parameters": {
+						"text": "text",
+						"language": "lan",
+						"voice-uri": "\"\"",
+						"volume": "volum",
+						"rate": "rate",
+						"pitch": "pitch"
+					}
+				}
+			],
+			"sid": 489480979988161
+		}
+	],
+	"sid": 141411744738991
+}
